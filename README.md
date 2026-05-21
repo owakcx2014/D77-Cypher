@@ -1,3 +1,4 @@
+![D77 Banner](https://github.com/owakcx2014/D77-Cypher/blob/main/d77.png?raw=true)
 # 🔒 D77 Cipher Tool
 
 An advanced, military-grade interactive CLI cipher tool and custom shell written in Python. D77 allows users to encrypt and decrypt files or text seamlessly using an enhanced dynamic indexing algorithm, with zero external dependencies
