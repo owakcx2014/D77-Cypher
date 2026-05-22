@@ -15,11 +15,28 @@ An advanced, military-grade interactive CLI cipher tool and custom shell written
 
 ---
 
+## Installation Guid
+
+### On windows:
+
+1. Download The Windows `.Zip` file From [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
+2. Unzip it then install D77 From `D77_Setup.exe` File
+3. Start D77 Cypher and Enjoy Cyphering!
+
+### On Linux
+
+1. Download The Linux `.Zip` File From [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
+2. Unzip it then install it from `install.sh` File
+3. open Terminal then Run `cd {file dirictory}` then run `./install.sh`
+4. Start D77 Cypher and Enjoy Cyphering!
+
+---
+
 ## 🚀 Quick Start & Usage
 
 Run the compiled executable or script to enter the **D77 Interactive Shell**:
 
-```cmd
+```cmd/bash
 D77
 ```
 Or run the app from the Start Menu
@@ -31,12 +48,12 @@ Or run the app from the Start Menu
 ## 1. File Cipher Options
 
 ```text
-d77 -e [loops] <file>         (Encrypt file in-place)
-d77 -E [loops] <file> <out>   (Encrypt to a new file)
-d77 -d [loops] <file>         (Decrypt file in-place)
-d77 -D [loops] <file> <out>   (Decrypt to a new file)
-d77 -Ec [loops] <file> <out>  (Encrypt & change file extension and name)
-d77 -Dc [loops] <file> <out>  (Decrypt & change file extension and name)
+d77 -e [loops] <A.txt>         (Encrypt file in-place)
+d77 -E [loops] <A.txt> <B.txt>   (Encrypt to a new file)
+d77 -d [loops] <B.txt>         (Decrypt file in-place)
+d77 -D [loops] <B.txt> <A.txt>   (Decrypt to a new file)
+d77 -Ec [loops] <A.txt> <B.d77>  (Encrypt & change file extension and name)
+d77 -Dc [loops] <B.d77> <A.dec>  (Decrypt & change file extension and name)
 ```
 
 ### Example
@@ -73,10 +90,10 @@ Wrap encrypted text inside square brackets:
 
 ```text
 D77/~/desktop> (hello world)
-[+] Encrypted Result: »#¼...
+[+] Encrypted Result: 91vel3pb2PveCiVleltdSA==
 
-D77/~/desktop> [»#¼...]
-[+] Decrypted Result: hello world
+D77/~/desktop> [91vel3pb2PveCiVleltdSA==]
+[+] Decrypted Result: Hello World!
 ```
 
 ---
