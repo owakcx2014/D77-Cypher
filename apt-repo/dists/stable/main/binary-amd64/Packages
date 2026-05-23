@@ -1,0 +1,11 @@
+Package: d77-cipher
+Version: 2.2
+Architecture: amd64
+Maintainer: IDK owaxck2014@gmail.com
+Filename: pool/main/d77-cipher_2.2_amd64.deb
+Size: 5360562
+MD5sum: 3a4fa1d9ab2fbdbb85c4ea3d9635d1ae
+SHA1: 92a5d54fdbe81cde613b059ca20c835e248eb252
+SHA256: 45a2017718ecd249c732624c05fe9a6b2d32093e75a6e241729dca88bb0f2dd4
+Description: Advanced military-grade interactive CLI cipher tool and custom shell.
+

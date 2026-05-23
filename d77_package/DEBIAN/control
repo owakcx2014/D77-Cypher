@@ -1,0 +1,5 @@
+Package: d77-cipher
+Version: 2.2
+Architecture: amd64
+Maintainer: IDK owaxck2014@gmail.com
+Description: Advanced military-grade interactive CLI cipher tool and custom shell.
