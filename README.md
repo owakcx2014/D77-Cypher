@@ -121,13 +121,9 @@ D77/~/desktop> [91vel3pb2PveCiVleltdSA==]
 
 ---
 
-## 🛠️ Compilation
+## 😂 Joke for Fun!
 
-Build a standalone executable using PyInstaller:
-
-```bash
-pyinstaller --onefile --icon=d77.ico d77.py
-```
+try to type "say wallahi bro"
 
 ---
 
