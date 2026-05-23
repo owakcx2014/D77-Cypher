@@ -15,19 +15,19 @@ An advanced, military-grade interactive CLI cipher tool and custom shell written
 
 ---
 
-## Installation Guid
+## Installation Guide
 
-### On windows:
+### On Windows:
 
-1. Download The Windows `.Zip` file From [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
-2. Unzip it then install D77 From `D77_Setup.exe` File
+1. Download the Windows `.Zip` file from [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
+2. Unzip it, then install D77 from the `D77_Setup.exe` File
 3. Start D77 Cypher and Enjoy Cyphering!
 
 ### On Linux
 
-1. Download The Linux `.Zip` File From [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
-2. Unzip it then install it from `install.sh` File
-3. open Terminal then Run `cd {file dirictory}` then run `./install.sh`
+1. Download the Linux `.Zip` File from [Releases](https://github.com/owakcx2014/D77-Cypher/releases)
+2. Unzip it, then install it from the `install.sh` File
+3. open Terminal then Run `cd {file directory}` then run `./install.sh`
 4. Start D77 Cypher and Enjoy Cyphering!
 
 ---
