@@ -49,12 +49,12 @@ Or run the app from the Start Menu
 
 ### on Windows:
 
-1. From control Panel or settings
+1. From the Control Panel or settings
 2. You can also Uninstall From start menu folder `Uninstall D77 Cipher`
 
-### On linux:
+### On Linux:
 
-1. Use `uninstall.sh` file by run `cd /path/to/your/file` then run `./uninstall.sh`
+1. Use the `uninstall.sh` file by running `cd /path/to/your/file` then run `./uninstall.sh`
 2. You can also run `sudo rm /usr/local/bin/d77`
 
 ---
@@ -141,9 +141,9 @@ try to type "say wallahi bro"
 
 ---
 
-## 😔 Facts About Devoloper:
+## 😔 Facts About Developer:
 
-I'm 11 years old, My PC is cooked (2008 Model), I realy Need a new PC but I don't have money, I'm from Egypt but Living in Saudi Arabia, I'm Using linux and I Use Arch BTW
+I'm 11 years old. My PC is cooked (2008 Model), I really need a new PC, but I don't have money. I'm from Egypt but living in Saudi Arabia, I'm using Linux, and I use Arch BTW
 
 ---
 
@@ -153,10 +153,13 @@ MIT License
 
 ---
 
-## Support Devoloper:
+## Support Developer:
 
-Please put A star to this project and see my other projects in my Account on Github
+Please put a star on this project and see my other projects in my Account on GitHub
 
 Contact me: owaxck2014@gmail.com
 
-Developed with 💻 and 🧠 by Abdulla Nagy.
+> [!NOTE]
+> ✍️ Note: I used Grammarly to help me polish the English side of this documentation, but unfortunately, it doesn't support Arabic due to its rich complexity (which makes me feel both proud and a bit frustrated at the same time! 👑❤️).
+
+Developed with 💻, 🧠, and pure open-source passion by Abdullah Nagy.
