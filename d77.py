@@ -100,33 +100,62 @@ def _save_history(readline_mod):
 # FIX #12: تحليل الأوامر مع دعم المسافات في أسماء الملفات
 # ─────────────────────────────────────────────────────────────
 def _parse_command(user_input: str) -> list[str]:
-    """
+    r"""
     يحلل الأمر بشكل صحيح على Windows وLinux.
-    يدعم:
-      cat file.txt
-      cat 'file name.txt'
-      cat "file name.txt"
-      -e "my file.txt"
-      -e 3 "my file.txt"
+
+    المشكلة على Windows:
+      shlex يعامل backslash كـ escape فيكسر المسارات:
+      cd C:\Users\IDK  ->  ['cd', 'C', ':', 'UsersIDK']  X
+
+    الاستراتيجية:
+      1. أول كلمة = الأمر (cmd) دائماً
+      2. الباقي = arguments بـ parser يدوي يحترم:
+           - الأقواس "..." و'...' للمسافات
+           - الـ backslash كحرف عادي بدون escape
     """
-    try:
-        if IS_WINDOWS:
-            lex = shlex.shlex(user_input, posix=False)
-            lex.whitespace_split = False
-            lex.whitespace = ' \t'
-            tokens = list(lex)
-            cleaned = []
-            for t in tokens:
-                if (t.startswith('"') and t.endswith('"')) or \
-                   (t.startswith("'") and t.endswith("'")):
-                    cleaned.append(t[1:-1])
-                else:
-                    cleaned.append(t)
-            return [t for t in cleaned if t]
-        else:
+    if not IS_WINDOWS:
+        try:
             return shlex.split(user_input)
-    except ValueError:
-        return user_input.split()
+        except ValueError:
+            return user_input.split()
+
+    user_input = user_input.strip()
+    if not user_input:
+        return []
+
+    # ── الخطوة 1: استخرج أول token (الأمر) بالـ split البسيط ──
+    first_space = user_input.find(' ')
+    if first_space == -1:
+        return [user_input]  # أمر بدون arguments
+
+    cmd  = user_input[:first_space]
+    rest = user_input[first_space + 1:].strip()
+
+    if not rest:
+        return [cmd]
+
+    # ── الخطوة 2: حلل الـ arguments مع دعم الأقواس والـ \ ──────
+    args    = []
+    current = []
+    in_double = False
+    in_single = False
+
+    for ch in rest:
+        if ch == '"' and not in_single:
+            in_double = not in_double      # دخول/خروج قوس مزدوج
+        elif ch == "'" and not in_double:
+            in_single = not in_single      # دخول/خروج قوس مفرد
+        elif ch == ' ' and not in_double and not in_single:
+            if current:
+                args.append(''.join(current))
+                current = []
+        else:
+            current.append(ch)             # \ وكل الحروف تُضاف كما هي
+
+    if current:
+        args.append(''.join(current))
+
+    return [cmd] + args
 
 
 def _strip_quotes(s: str) -> str:

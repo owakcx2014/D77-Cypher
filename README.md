@@ -45,6 +45,20 @@ Or run the app from the Start Menu
 > It's much better to use the app if you are on Windows!
 ---
 
+## Uninstallation:
+
+### on Windows:
+
+1. From control Panel or settings
+2. You can also Uninstall From start menu folder `Uninstall D77 Cipher`
+
+### On linux:
+
+1. Use `uninstall.sh` file by run `cd /path/to/your/file` then run `./uninstall.sh`
+2. You can also run `sudo rm /usr/local/bin/d77`
+
+---
+
 ## 1. File Cipher Options
 
 ```text
@@ -127,10 +141,22 @@ try to type "say wallahi bro"
 
 ---
 
+## 😔 Facts About Devoloper:
+
+I'm 11 years old, My PC is cooked (2008 Model), I realy Need a new PC but I don't have money, I'm from Egypt but Living in Saudi Arabia, I'm Using linux and I Use Arch BTW
+
+---
+
 ## 📄 License
 
 MIT License
 
 ---
 
-Developed with 💻 and 🧠 by IDK.
+## Support Devoloper:
+
+Please put A star to this project and see my other projects in my Account on Github
+
+Contact me: owaxck2014@gmail.com
+
+Developed with 💻 and 🧠 by Abdulla Nagy.
